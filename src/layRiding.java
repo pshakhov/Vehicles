@@ -1,10 +1,14 @@
 public class layRiding implements Vehicles {
+
+    @Override
     public void ride() {
 
     }
+
     public void brake() {
 
     }
+
     public void park() {
 
     }
@@ -17,7 +21,7 @@ public class layRiding implements Vehicles {
         }
     }
 
-    private class Cart extends layRiding{
+    private class Cart extends layRiding {
 
         public void ride() {
             //layingInside();
@@ -25,7 +29,7 @@ public class layRiding implements Vehicles {
         }
     }
 
-    private class Skullboard extends layRiding{
+    private class Skullboard extends layRiding {
 
         public void ride() {
             //jumpOnKickOff();

@@ -1,4 +1,4 @@
-public class standRiding implements  Vehicles{
+public class standRiding implements Vehicles {
     @Override
     public void ride() {
         //balancing();
@@ -25,15 +25,15 @@ public class standRiding implements  Vehicles{
         }
     }
 
-    private class Scooter extends standRiding{
+    private class Scooter extends standRiding {
 
         public void ride() {
             //pushOff();
-           int maxSpeed = 43;
+            int maxSpeed = 43;
         }
 
         public void brake() {
-           int minSpeed = 0;
+            int minSpeed = 0;
         }
 
         public void park() {
@@ -45,7 +45,7 @@ public class standRiding implements  Vehicles{
 
         public void ride() {
             //pushOff();
-           int maxSpeed = 130;
+            int maxSpeed = 130;
             //likeTonyHawkProSkaterRiding();
             //backFlip();
         }

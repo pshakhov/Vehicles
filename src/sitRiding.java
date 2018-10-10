@@ -1,21 +1,25 @@
 public class sitRiding implements Vehicles {
+
     private String sitMaterial;
 
     sitRiding(String sitMaterial) {
         this.sitMaterial = sitMaterial;
     }
 
+    @Override
     public void ride() {
 
     }
+
     public void brake() {
 
     }
+
     public void park() {
         //Spreading();
     }
 
-    public static class Cruiser extends sitRiding{
+    public class Cruiser extends sitRiding {
         public Cruiser(String sitMaterial) {
             super(sitMaterial);
             super.sitMaterial = "Leather";
@@ -36,45 +40,45 @@ public class sitRiding implements Vehicles {
         }
     }
 
-        public static class WheelChair extends sitRiding{
+    public class WheelChair extends sitRiding {
         public WheelChair(String sitMaterial) {
             super(sitMaterial);
             super.sitMaterial = "textile";
         }
-            public void ride() {
-                //wheelSpin();
-                int maxSpeed = 35;
-            }
 
-            public void brake() {
-            //handBrake();
-                int minSpeed = 0;
-            }
-
-            public void park() {
-
-            }
+        public void ride() {
+            //wheelSpin();
+            int maxSpeed = 35;
         }
 
-        public static class SwivelChair extends sitRiding {
+        public void brake() {
+            //handBrake();
+            int minSpeed = 0;
+        }
+
+        public void park() {
+
+        }
+    }
+
+    public class SwivelChair extends sitRiding {
         public SwivelChair(String sitMaterial) {
             super(sitMaterial);
             super.sitMaterial = "cotton";
         }
 
-            public void ride() {
-                //kicking();
-                int maxSpeed = 1;
-            }
+        public void ride() {
+            //kicking();
+            int maxSpeed = 1;
+        }
 
-            public void brake() {
+        public void brake() {
             //footStop();
-                int minSpeed = 0;
-            }
+            int minSpeed = 0;
+        }
 
-            public void park() {
+        public void park() {
             //toWorkplace();
-            }
         }
     }
-
+}
